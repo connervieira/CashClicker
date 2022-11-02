@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+}
+
+[application]
+
+config/name="Cash Clicker"
+config/description="A simple clicker game without ads, or micro-transactions"
+run/main_scene="res://Scenes/Main.tscn"
+boot_splash/image="res://Images/Logo.png"
+config/icon="res://Images/Logo.png"
+
+[autoload]
+
+UserData="*res://addons/github-integration/scripts/user_data.gd"
+IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
+PlayerVariables="*res://Scripts/Variables.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray(  )
+
+[locale]
+
+locale_filter=[ 0, [  ] ]
